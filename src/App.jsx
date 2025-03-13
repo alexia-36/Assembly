@@ -16,7 +16,6 @@ export default function App() {
   const [index, setIndex] = useState(0);
   const [message, setMessage] = useState("");
 
-  console.log(word);
   //derived variables
   const wrongGuessCount = pressedLet.filter((letter) => {
     return !word.includes(letter);
