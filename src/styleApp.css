@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  background-color: #262626;
+  color: #d9d9d9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header component */
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #f9f4da;
+}
+
+header p {
+  font-size: 0.8rem;
+  color: #8e8e8e;
+  max-width: 350px;
+  margin-left: 2.8rem;
+  margin-right: 2.8rem;
+}
+
+/*  Status component */
+.status {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-block: 30px;
+  min-height: 60px;
+  width: 100%;
+  max-width: 350px;
+}
+.status h2 {
+  font-weight: 300;
+}
+
+.status p {
+  margin-top: -1.2rem;
+}
+
+.status.blue {
+  background-color: #2d519f;
+}
+.status.red {
+  background-color: rgb(170, 42, 42);
+}
+.status.green {
+  background-color: green;
+}
+/*containerLanguages section*/
+section.containerLanguages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  max-width: 370px;
+}
+
+.language {
+  border-radius: 3px;
+  padding: 4.5px;
+  font-weight: 400;
+  position: relative;
+}
+
+.language.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(14, 14, 14, 0.7);
+}
+
+/* containerWord section */
+.containerWord {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+}
+
+.containerWord .letter {
+  background: rgb(53, 53, 53);
+  width: 40px;
+  height: 40px;
+  margin-right: 3px;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+/* keyboard section */
+.containerBtns {
+  max-width: 450px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.containerBtns .btnKey {
+  width: 35px;
+  height: 35px;
+  background: #6788da;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.15rem;
+}
+
+.containerBtns .btnKey:hover {
+  background-color: #5c79c0;
+}
+
+.containerBtns .green {
+  background-color: green;
+}
+.btnKey.green:hover {
+  background-color: green;
+  cursor: default;
+}
+
+.containerBtns .red {
+  background-color: rgb(196, 33, 33);
+}
+.btnKey.red:hover {
+  background-color: rgb(196, 33, 33);
+  cursor: default;
+}
+
+.disabled {
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.shown {
+  color: red;
+}
+
+/* butonul newGame */
+.newGame {
+  width: 10rem;
+  margin-top: 2rem;
+  color: #fff;
+  align-self: center;
+  background: rgb(39, 50, 153);
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  height: 2.1rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.newGame:hover {
+  background: rgb(54, 65, 163);
+}
+
+/* Confetti */
+.containerConfetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
