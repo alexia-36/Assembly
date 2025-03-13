@@ -485,7 +485,7 @@
 
 // export default words;
 
-export const words = [
+const words = [
   "acasa",
   "acord",
   "adaugare",
@@ -862,3 +862,5 @@ export const words = [
   "zid",
   "zoologie",
 ];
+
+export default words;
